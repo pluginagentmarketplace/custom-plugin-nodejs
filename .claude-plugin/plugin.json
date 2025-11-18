@@ -1,0 +1,128 @@
+{
+  "name": "developer-roadmap",
+  "version": "1.0.0",
+  "displayName": "Developer Roadmap Pro",
+  "description": "Comprehensive learning platform for 60+ developer roadmaps with AI-powered guidance, personalized learning paths, and project-based learning",
+  "author": "Claude Code",
+  "repository": "https://github.com/kamranahmedse/developer-roadmap",
+  "homepage": "https://roadmap.sh",
+  "keywords": [
+    "learning",
+    "roadmap",
+    "career",
+    "programming",
+    "developer",
+    "skill-assessment",
+    "project-based-learning",
+    "interview-prep"
+  ],
+  "agents": [
+    {
+      "id": "career-path-advisor",
+      "name": "Career Path Advisor",
+      "file": "agents/01-career-path-advisor.md",
+      "description": "Guide users through different developer career paths and specializations"
+    },
+    {
+      "id": "skill-assessment-expert",
+      "name": "Skill Assessment Expert",
+      "file": "agents/02-skill-assessment-expert.md",
+      "description": "Evaluate current skills and identify knowledge gaps"
+    },
+    {
+      "id": "learning-path-designer",
+      "name": "Learning Path Designer",
+      "file": "agents/03-learning-path-designer.md",
+      "description": "Create personalized, structured learning plans"
+    },
+    {
+      "id": "project-mentor",
+      "name": "Project Mentor",
+      "file": "agents/04-project-mentor.md",
+      "description": "Guide through hands-on projects and practical applications"
+    },
+    {
+      "id": "community-guide",
+      "name": "Community & Resources Guide",
+      "file": "agents/05-community-guide.md",
+      "description": "Connect learners with communities, resources, and best practices"
+    },
+    {
+      "id": "progress-tracker",
+      "name": "Progress Tracker & Optimizer",
+      "file": "agents/06-progress-tracker.md",
+      "description": "Monitor learning progress and optimize learning strategies"
+    },
+    {
+      "id": "interview-preparer",
+      "name": "Interview Preparer",
+      "file": "agents/07-interview-preparer.md",
+      "description": "Prepare for technical interviews and assessments"
+    }
+  ],
+  "commands": [
+    {
+      "name": "explore",
+      "file": "commands/explore.md",
+      "description": "Explore available developer roadmaps and specializations"
+    },
+    {
+      "name": "assess",
+      "file": "commands/assess.md",
+      "description": "Assess your current skills and knowledge level"
+    },
+    {
+      "name": "plan",
+      "file": "commands/plan.md",
+      "description": "Create a personalized learning plan"
+    },
+    {
+      "name": "projects",
+      "file": "commands/projects.md",
+      "description": "Discover hands-on projects to practice skills"
+    }
+  ],
+  "skills": [
+    {
+      "id": "programming-languages",
+      "name": "Programming Languages",
+      "file": "skills/programming-languages/SKILL.md"
+    },
+    {
+      "id": "frameworks-tools",
+      "name": "Frameworks & Tools",
+      "file": "skills/frameworks-tools/SKILL.md"
+    },
+    {
+      "id": "specializations",
+      "name": "Developer Specializations",
+      "file": "skills/specializations/SKILL.md"
+    },
+    {
+      "id": "databases-infrastructure",
+      "name": "Databases & Infrastructure",
+      "file": "skills/databases/SKILL.md"
+    },
+    {
+      "id": "devops-cloud",
+      "name": "DevOps & Cloud",
+      "file": "skills/infrastructure/SKILL.md"
+    },
+    {
+      "id": "soft-skills",
+      "name": "Soft Skills & Communication",
+      "file": "skills/soft-skills/SKILL.md"
+    },
+    {
+      "id": "interview-skills",
+      "name": "Interview & Assessment Skills",
+      "file": "skills/interview-prep/SKILL.md"
+    }
+  ],
+  "hooks": [
+    {
+      "id": "progress-tracking",
+      "file": "hooks/hooks.json"
+    }
+  ]
+}
