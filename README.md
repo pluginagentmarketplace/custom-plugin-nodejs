@@ -1,429 +1,448 @@
-# Developer Roadmap Pro - Claude Code Plugin
+# Node.js Developer Pro - Claude Code Plugin
 
-A comprehensive, AI-powered learning platform that transforms the famous [Developer Roadmap](https://roadmap.sh) into personalized, interactive learning experiences within Claude Code.
+Complete Node.js backend development mastery from fundamentals to production deployment. Master Express REST APIs, databases, authentication, testing, Docker, and performance optimization based on the official [Node.js Developer Roadmap](https://roadmap.sh/nodejs).
 
-## 🎯 Overview
+## Overview
 
-**Developer Roadmap Pro** is a premium Claude Code plugin designed to guide developers through their learning journey with:
+**Node.js Developer Pro** is a comprehensive Claude Code plugin designed to guide you through modern backend development with Node.js:
 
-- **7 Specialized Agents** providing expert guidance across different aspects of learning
-- **7 Core Skills** covering essential developer competencies
-- **4 Interactive Commands** for exploration, assessment, planning, and project discovery
-- **60+ Roadmaps** from the developer-roadmap repository
-- **Personalized Learning Paths** customized to your goals and timeline
-- **Portfolio Building** through hands-on projects
-- **Interview Preparation** for landing your dream job
+- **7 Specialized Agents** - Expert guidance across all aspects of Node.js development
+- **7 Core Skills** - Hands-on skills covering Express, MongoDB, JWT, Testing, Docker, and more
+- **4 Interactive Commands** - Quick-start guides for common Node.js tasks
+- **Production-Ready Patterns** - Real-world examples and best practices
+- **100% Backend Focus** - No frontend or Python content
 
-## ✨ Key Features
+## Key Features
 
-### 🎓 7 Expert Agents
+### 7 Expert Agents
 
-1. **Career Path Advisor** - Explore 60+ developer career paths and specializations
-2. **Skill Assessment Expert** - Evaluate your skills and identify growth areas
-3. **Learning Path Designer** - Create personalized, structured learning roadmaps
-4. **Project Mentor** - Get guided through hands-on projects and code reviews
-5. **Community & Resources Guide** - Connect with communities and discover resources
-6. **Progress Tracker** - Monitor your learning journey and celebrate wins
-7. **Interview Preparer** - Master technical and behavioral interviews
+1. **Node.js Fundamentals** - Event loop, modules, npm, and async programming
+2. **Express Framework** - REST APIs, routing, middleware, error handling
+3. **Async Programming** - Promises, async/await, streams, event-driven patterns
+4. **Database Integration** - MongoDB, PostgreSQL, MySQL, ORMs (Mongoose, Sequelize, Prisma)
+5. **Authentication & Security** - JWT, OAuth, sessions, security best practices
+6. **Testing & Debugging** - Jest, Mocha, Supertest, debugging techniques
+7. **Deployment & Scaling** - Docker, PM2, clustering, load balancing, cloud platforms
 
-### 💼 7 Core Skills
+### 7 Core Skills
 
-1. **Programming Languages** - Master 10+ languages (JavaScript, Python, Go, Rust, etc.)
-2. **Frameworks & Tools** - Learn modern frameworks (React, Vue, Angular, Node.js, Django, etc.)
-3. **Developer Specializations** - Explore 20+ career paths (Frontend, Backend, DevOps, AI/ML, etc.)
-4. **Databases & Infrastructure** - Design and manage data systems
-5. **DevOps & Cloud** - Master Docker, Kubernetes, CI/CD, and cloud platforms
-6. **Soft Skills** - Develop communication, teamwork, and leadership abilities
-7. **Interview Skills** - Ace technical interviews and negotiations
+1. **Express REST API** - Build production-ready RESTful APIs
+2. **Async Patterns** - Master asynchronous JavaScript
+3. **Mongoose & MongoDB** - NoSQL database integration
+4. **JWT Authentication** - Secure authentication flows
+5. **Jest Testing** - Comprehensive test coverage
+6. **Docker Deployment** - Containerize Node.js applications
+7. **Performance Optimization** - Caching, clustering, profiling
 
-### 🚀 4 Interactive Commands
+### 4 Quick-Start Commands
 
 ```bash
-/explore              # Discover 60+ developer roadmaps
-/assess              # Evaluate your current skills
-/plan                # Create a personalized learning path
-/projects            # Find hands-on projects to build
+/nodejs-start      # Get started with Node.js development
+/nodejs-api        # Build a REST API with Express + MongoDB
+/nodejs-test       # Setup testing with Jest
+/nodejs-deploy     # Deploy to production with Docker
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
-#### Option 1: Direct Installation
 ```bash
-git clone https://github.com/yourusername/developer-roadmap-plugin.git
-cd developer-roadmap-plugin
-```
+# Clone or install the plugin
+git clone https://github.com/pluginagentmarketplace/custom-plugin-nodejs.git
 
-#### Option 2: Claude Code Plugin Manager
-```bash
-# In Claude Code:
-plugin add ./developer-roadmap-plugin
-```
-
-#### Option 3: Marketplace (Coming Soon)
-```bash
-# In Claude Code:
-plugin add marketplace://developer-roadmap-pro
+# In Claude Code, add the plugin
+plugin add ./custom-plugin-nodejs
 ```
 
 ### First Steps
 
-1. **Explore Career Paths**
-   ```
-   /explore
-   ```
-   Discover all available developer specializations and career paths
+1. **Learn Fundamentals**
+   - Understand Node.js event loop
+   - Master async/await patterns
+   - Set up your first Express server
 
-2. **Assess Your Skills**
-   ```
-   /assess
-   ```
-   Get an honest evaluation of your current technical abilities
+2. **Build an API**
+   - Create REST endpoints
+   - Connect to MongoDB
+   - Implement JWT authentication
 
-3. **Create Learning Plan**
-   ```
-   /plan fullstack 6-months
-   ```
-   Generate a personalized roadmap to your goal
+3. **Test Your Code**
+   - Write unit tests with Jest
+   - Test APIs with Supertest
+   - Achieve 80%+ coverage
 
-4. **Find Projects**
-   ```
-   /projects beginner
-   ```
-   Discover hands-on projects to practice and build portfolio
+4. **Deploy to Production**
+   - Containerize with Docker
+   - Use PM2 for process management
+   - Deploy to cloud platforms
 
-## 📚 Plugin Structure
+## What You'll Learn
+
+### Backend Foundations
+- Node.js runtime architecture
+- Event loop and non-blocking I/O
+- Module systems (CommonJS and ES Modules)
+- NPM package management
+- Environment configuration
+
+### REST API Development
+- Express.js framework
+- RESTful design principles
+- Route organization (MVC pattern)
+- Middleware patterns
+- Request validation
+- Error handling
+- API versioning
+
+### Database Integration
+- **MongoDB** with Mongoose ODM
+  - Schema design
+  - CRUD operations
+  - Relationships and population
+  - Aggregation pipelines
+- **PostgreSQL** with pg/Sequelize
+  - Parameterized queries
+  - Transactions
+  - JOINs and complex queries
+- **Prisma** modern ORM
+  - Type-safe database access
+  - Auto-generated migrations
+
+### Authentication & Security
+- JWT token-based authentication
+- Access and refresh tokens
+- Password hashing with bcrypt
+- OAuth 2.0 integration
+- Role-based access control (RBAC)
+- Security headers (Helmet.js)
+- CORS configuration
+- Rate limiting
+- Input validation
+
+### Testing Strategies
+- Unit testing with Jest
+- Integration testing with Supertest
+- Mocking and spying
+- Test coverage reports
+- CI/CD integration
+- TDD/BDD approaches
+
+### Deployment & DevOps
+- Docker containerization
+- Multi-stage Docker builds
+- Docker Compose for services
+- PM2 process management
+- Clustering for multi-core usage
+- Nginx reverse proxy
+- Load balancing strategies
+- Cloud deployment (AWS, Heroku, DigitalOcean)
+- CI/CD pipelines
+
+### Performance Optimization
+- Caching with Redis
+- Database query optimization
+- Response compression
+- Connection pooling
+- CPU profiling
+- Memory leak detection
+- Monitoring and logging
+
+## Learning Paths
+
+### Beginner Path (3-4 months)
+
+**Month 1: Fundamentals**
+- Install Node.js and npm
+- Understand event loop
+- Learn async/await
+- Build first Express server
+- Connect to MongoDB
+
+**Month 2: REST APIs**
+- Design RESTful endpoints
+- Implement CRUD operations
+- Add input validation
+- Error handling
+- Pagination and filtering
+
+**Month 3: Authentication & Testing**
+- Implement JWT authentication
+- User registration/login
+- Protected routes
+- Write Jest tests
+- API testing with Supertest
+
+**Month 4: Deployment**
+- Dockerize application
+- Use PM2 for production
+- Deploy to cloud
+- Setup monitoring
+
+### Intermediate Path (5-6 months)
+
+**Months 1-3: Build Complete Projects**
+- RESTful blog API
+- E-commerce backend
+- Social media API
+- Real-time chat server
+
+**Months 4-5: Advanced Topics**
+- Microservices architecture
+- Event-driven systems
+- GraphQL integration
+- WebSocket servers
+- Background job processing
+
+**Month 6: Production Mastery**
+- Load balancing
+- Auto-scaling
+- Performance tuning
+- Security hardening
+- Monitoring and alerting
+
+### Advanced Path (6-12 months)
+
+- Microservices with Docker Swarm/Kubernetes
+- Message queues (RabbitMQ, Kafka)
+- Serverless architecture
+- Performance optimization at scale
+- System design for Node.js
+- Contributing to open source
+
+## Real-World Projects
+
+### Project 1: Task Management API
+**Tech Stack**: Express + MongoDB + JWT
+
+- User authentication
+- CRUD operations for tasks
+- Task assignment and status
+- Filtering and pagination
+- Role-based permissions
+
+### Project 2: E-Commerce Backend
+**Tech Stack**: Express + PostgreSQL + Stripe
+
+- Product catalog
+- Shopping cart
+- Payment processing
+- Order management
+- Inventory tracking
+- Admin dashboard
+
+### Project 3: Social Media API
+**Tech Stack**: Express + MongoDB + Socket.io
+
+- User profiles
+- Post creation and feeds
+- Comments and likes
+- Real-time notifications
+- File uploads (S3)
+- Search functionality
+
+### Project 4: Analytics Dashboard API
+**Tech Stack**: Express + PostgreSQL + Redis
+
+- Data collection endpoints
+- Aggregation queries
+- Caching layer
+- Report generation
+- CSV exports
+- Scheduled jobs
+
+## Tech Stack Coverage
+
+### Core Technologies
+- **Node.js** (v18+)
+- **JavaScript ES6+**
+- **TypeScript** (optional)
+
+### Frameworks & Libraries
+- **Express.js** - Web framework
+- **Fastify** - Alternative framework
+- **Koa.js** - Modern framework
+
+### Databases
+- **MongoDB** with Mongoose
+- **PostgreSQL** with pg/Sequelize
+- **MySQL** with mysql2
+- **Redis** for caching
+
+### Authentication
+- **jsonwebtoken** - JWT implementation
+- **passport.js** - Authentication strategies
+- **bcryptjs** - Password hashing
+
+### Testing
+- **Jest** - Test framework
+- **Mocha** + **Chai** - Alternative stack
+- **Supertest** - API testing
+- **Sinon** - Mocking
+
+### DevOps
+- **Docker** - Containerization
+- **PM2** - Process management
+- **Nginx** - Reverse proxy
+- **GitHub Actions** - CI/CD
+
+### Utilities
+- **dotenv** - Environment variables
+- **helmet** - Security headers
+- **cors** - Cross-origin requests
+- **morgan** - HTTP logging
+- **winston** - Application logging
+- **express-validator** - Input validation
+
+## Best Practices Included
+
+- ✅ Clean code architecture (MVC/service layer)
+- ✅ Error handling patterns
+- ✅ Input validation
+- ✅ Security best practices (OWASP)
+- ✅ RESTful API design
+- ✅ Database optimization
+- ✅ Caching strategies
+- ✅ Testing strategies (>80% coverage)
+- ✅ Documentation (JSDoc, Swagger)
+- ✅ Git workflow
+- ✅ Environment-based configuration
+- ✅ Logging and monitoring
+- ✅ Code reviews
+- ✅ Production deployment
+
+## Plugin Structure
 
 ```
-developer-roadmap-plugin/
+custom-plugin-nodejs/
 ├── .claude-plugin/
-│   └── plugin.json                    # Plugin manifest
+│   └── plugin.json              # Plugin manifest
 │
-├── agents/                            # 7 Expert Agents
-│   ├── 01-career-path-advisor.md
-│   ├── 02-skill-assessment-expert.md
-│   ├── 03-learning-path-designer.md
-│   ├── 04-project-mentor.md
-│   ├── 05-community-guide.md
-│   ├── 06-progress-tracker.md
-│   └── 07-interview-preparer.md
+├── agents/                       # 7 Expert Agents
+│   ├── 01-nodejs-fundamentals.md
+│   ├── 02-express-framework.md
+│   ├── 03-async-programming.md
+│   ├── 04-database-integration.md
+│   ├── 05-authentication-security.md
+│   ├── 06-testing-debugging.md
+│   └── 07-deployment-scaling.md
 │
-├── commands/                          # 4 Interactive Commands
-│   ├── explore.md
-│   ├── assess.md
-│   ├── plan.md
-│   └── projects.md
+├── skills/                       # 7 Core Skills
+│   ├── express-rest-api/SKILL.md
+│   ├── async-patterns/SKILL.md
+│   ├── mongoose-mongodb/SKILL.md
+│   ├── jwt-authentication/SKILL.md
+│   ├── jest-testing/SKILL.md
+│   ├── docker-deployment/SKILL.md
+│   └── performance-optimization/SKILL.md
 │
-├── skills/                            # 7 Core Skills
-│   ├── programming-languages/SKILL.md
-│   ├── frameworks-tools/SKILL.md
-│   ├── specializations/SKILL.md
-│   ├── databases/SKILL.md
-│   ├── infrastructure/SKILL.md
-│   ├── soft-skills/SKILL.md
-│   └── interview-prep/SKILL.md
+├── commands/                     # 4 Quick-Start Commands
+│   ├── start.md
+│   ├── api.md
+│   ├── test.md
+│   └── deploy.md
 │
-├── hooks/
-│   └── hooks.json                     # Automation and tracking
-│
-├── scripts/
-│   └── [utility scripts]
-│
-├── README.md                          # This file
-├── ARCHITECTURE.md                    # System design
-├── LEARNING-PATH.md                   # How to use effectively
-└── CHANGELOG.md                       # Version history
+└── README.md                     # This file
 ```
 
-## 🎯 Use Cases
+## Use Cases
 
 ### For Career Changers
-- Explore different developer specializations
-- Assess current skills realistically
-- Get guidance on transition strategies
-- Find relevant projects to build new skills
+- Learn backend development from scratch
+- Build portfolio projects
+- Prepare for Node.js interviews
+- Transition to backend developer role
 
 ### For Beginners
-- Understand different career paths
-- Create a structured learning plan
-- Get motivated with progress tracking
-- Access curated resources and projects
+- Step-by-step learning path
+- Real-world project examples
+- Best practices from day one
+- Guided hands-on practice
 
 ### For Intermediate Developers
-- Identify specialization paths
-- Assess depth of current knowledge
-- Get guidance on advancing skills
-- Prepare for technical interviews
+- Deepen Node.js knowledge
+- Learn advanced patterns
+- Master deployment and scaling
+- Production-ready implementations
 
 ### For Senior Developers
-- Mentor and guide career transitions
-- Understand emerging technologies
-- Plan specialized skill development
-- Prepare for leadership roles
+- Architecture patterns
+- Performance optimization
+- Microservices design
+- Mentoring and code review
 
-## 💡 How It Works
+## Resources & References
 
-### The Learning Journey
+### Official Documentation
+- [Node.js Official Docs](https://nodejs.org/docs)
+- [Express.js Documentation](https://expressjs.com)
+- [MongoDB Manual](https://docs.mongodb.com)
+- [Jest Documentation](https://jestjs.io)
+- [Docker Documentation](https://docs.docker.com)
 
-```
-1. EXPLORE
-   └─ Use /explore to discover career paths
-     └─ Understand different specializations
-       └─ Learn about prerequisites and skills
+### Learning Resources
+- [Node.js Roadmap](https://roadmap.sh/nodejs)
+- [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices)
+- [JavaScript.info](https://javascript.info)
+- [MDN Web Docs](https://developer.mozilla.org)
 
-2. ASSESS
-   └─ Use /assess to evaluate your skills
-     └─ Identify strengths and gaps
-       └─ Get personalized feedback
+### Community
+- [Node.js Official Community](https://nodejs.org/en/community/)
+- [Express.js GitHub](https://github.com/expressjs/express)
+- [r/node on Reddit](https://reddit.com/r/node)
+- [Stack Overflow - Node.js](https://stackoverflow.com/questions/tagged/node.js)
 
-3. PLAN
-   └─ Use /plan to create learning path
-     └─ Define milestones and timeline
-       └─ Get structured learning roadmap
+## Requirements
 
-4. LEARN & BUILD
-   └─ Use relevant agents for guidance
-     └─ Follow learning path milestones
-       └─ Use /projects to find practice projects
-
-5. TRACK & OPTIMIZE
-   └─ Monitor your progress
-     └─ Celebrate milestones
-       └─ Adjust strategy as needed
-
-6. INTERVIEW & LAND JOB
-   └─ Use Interview Preparer agent
-     └─ Practice mock interviews
-       └─ Master technical and behavioral questions
-```
-
-### Agent Integration
-
-Agents work seamlessly together:
-
-```
-Career Path Advisor
-    ↓
-  Assess with: Skill Assessment Expert
-    ↓
-  Plan with: Learning Path Designer
-    ↓
-  Build with: Project Mentor
-    ↓
-  Connect with: Community Guide
-    ↓
-  Track with: Progress Tracker
-    ↓
-  Interview with: Interview Preparer
-```
-
-## 📊 Content Coverage
-
-### 60+ Roadmaps
-Based on the official [Developer Roadmap](https://roadmap.sh):
-- Frontend Development
-- Backend Development
-- Full Stack Development
-- Mobile Development
-- DevOps
-- Data Engineering
-- AI/ML Engineering
-- QA/Testing
-- Security
-- Game Development
-- And 50+ more specializations
-
-### 100+ Hours of Content
-- Comprehensive guides for each roadmap
-- Best practices and common mistakes
-- Real-world examples and case studies
-- Community insights and trends
-- Resource curations
-
-### 100+ Projects
-From beginner todo apps to advanced microservices:
-- Clear learning objectives
-- Step-by-step guidance
-- Deployment instructions
-- Portfolio optimization tips
-
-## 🔗 Integration with Claude Code Features
-
-### Skills System
-Each skill loads progressively:
-```
-Metadata (always loaded) → Full content (when needed) → Resources (on demand)
-```
-
-### Agents
-Automatically activated based on context:
-- `/explore` → Career Path Advisor
-- `/assess` → Skill Assessment Expert
-- `/plan` → Learning Path Designer
-- `/projects` → Project Mentor
-
-### Hooks
-Automation features:
-- Progress tracking
-- Milestone notifications
-- Personalized recommendations
-- Community engagement
-
-## 🌟 Advanced Features
-
-### Personalization
-- Adapt to your learning style
-- Match your available time
-- Respect your preferences
-- Scale difficulty appropriately
-
-### Tracking & Analytics
-- Monitor learning progress
-- Track skill development
-- Measure project completion
-- Identify improvement areas
-
-### Community Features
-- Connect with other learners
-- Access resource curations
-- Join study groups
-- Share your journey
-
-### Interview Preparation
-- Practice technical interviews
-- Master behavioral questions
-- Prepare for negotiation
-- Build confidence
-
-## 🎓 Learning Paths
-
-### Pre-built Paths
-
-**6-Month Full-Stack Developer**
-- Month 1-2: JavaScript fundamentals
-- Month 2-3: Frontend (React)
-- Month 3-4: Backend (Node.js)
-- Month 4-5: Databases & DevOps
-- Month 5-6: Projects & Interview prep
-
-**3-Month React Specialist**
-- Weeks 1-4: React mastery
-- Weeks 5-7: Ecosystem (testing, routing)
-- Weeks 8-10: Advanced topics & optimization
-- Weeks 11-12: Portfolio & interviews
-
-**9-Month DevOps Engineer**
-- Months 1-2: Linux & fundamentals
-- Months 2-3: Docker & containerization
-- Months 3-5: Kubernetes & orchestration
-- Months 5-6: CI/CD & infrastructure
-- Months 6-7: Cloud platforms
-- Months 7-9: Projects & interviews
-
-### Customizable Paths
-- Choose your goal
-- Select duration (3, 6, 9, 12 months)
-- Set intensity (part-time, full-time)
-- Match your learning style
-
-## 🚀 Getting Started Tips
-
-1. **Start with /explore**
-   - Understand different paths
-   - Read about various specializations
-   - Find what excites you
-
-2. **Run /assess**
-   - Be honest about your skills
-   - Identify your strengths
-   - Find growth opportunities
-
-3. **Create /plan**
-   - Choose your target role
-   - Set realistic timeline
-   - Break into milestones
-
-4. **Find /projects**
-   - Start with beginner projects
-   - Build portfolio pieces
-   - Deploy to production
-
-5. **Use Agents Actively**
-   - Ask for guidance
-   - Request code reviews
-   - Seek motivation
-   - Get interview prep
-
-## 📖 Documentation
-
-- **[ARCHITECTURE.md](./ARCHITECTURE.md)** - System design and how components work
-- **[LEARNING-PATH.md](./LEARNING-PATH.md)** - Detailed guide to effective learning
-- **[CHANGELOG.md](./CHANGELOG.md)** - Version history and updates
-
-## 🤝 Support & Community
-
-### Get Help
-- Use relevant agents for guidance
-- Ask detailed questions
-- Share your challenges
-- Seek feedback on projects
-
-### Connect with Community
-- Join developer communities
-- Participate in study groups
-- Share your progress
-- Mentor others
-
-### Provide Feedback
-- Report issues
-- Suggest improvements
-- Share success stories
-- Help improve content
-
-## 📝 Requirements
-
+- Node.js 18+ (LTS recommended)
+- npm 8+ or yarn 1.22+
+- Basic JavaScript knowledge
+- Code editor (VS Code recommended)
+- Terminal/command line familiarity
 - Claude Code (latest version)
-- Internet connection (for resources)
-- Time and dedication to learning
-- Curiosity and growth mindset
 
-## 📄 License
-
-This plugin is provided as-is for educational and professional development purposes.
-
-## 🙏 Acknowledgments
-
-- Based on the amazing [Developer Roadmap](https://roadmap.sh) project
-- Powered by Claude AI
-- Built for the developer community
-
-## 🎯 Version
+## Version
 
 - **Current**: 1.0.0
 - **Release Date**: November 2024
 - **Status**: Production Ready
+- **Roadmap Based**: roadmap.sh/nodejs (November 2025)
+
+## License
+
+This plugin is provided for educational and professional development purposes.
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome!
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## Acknowledgments
+
+- Based on the excellent [roadmap.sh Node.js path](https://roadmap.sh/nodejs)
+- Inspired by the Node.js community
+- Built for developers by developers
 
 ---
 
-## 🚀 Ready to Begin Your Learning Journey?
+## Ready to Master Node.js Backend Development?
 
 ```bash
-# 1. Explore available paths
-/explore
+# Start your journey
+/nodejs-start
 
-# 2. Assess your skills
-/assess
+# Build your first API
+/nodejs-api
 
-# 3. Create your learning plan
-/plan
+# Learn testing
+/nodejs-test
 
-# 4. Find projects to practice
-/projects
+# Deploy to production
+/nodejs-deploy
 
-# And start building your future! 💪
+# And become a Node.js backend expert! 🚀
 ```
 
-**Happy Learning! 🎓**
+**Happy Coding! 💻**
 
-For detailed usage information, see [LEARNING-PATH.md](./LEARNING-PATH.md)
+For questions, support, or feedback, visit the [GitHub repository](https://github.com/pluginagentmarketplace/custom-plugin-nodejs).

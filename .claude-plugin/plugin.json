@@ -1,128 +1,131 @@
 {
-  "name": "developer-roadmap",
+  "name": "nodejs-developer",
   "version": "1.0.0",
-  "displayName": "Developer Roadmap Pro",
-  "description": "Comprehensive learning platform for 60+ developer roadmaps with AI-powered guidance, personalized learning paths, and project-based learning",
-  "author": "Claude Code",
-  "repository": "https://github.com/kamranahmedse/developer-roadmap",
-  "homepage": "https://roadmap.sh",
+  "displayName": "Node.js Developer Pro",
+  "description": "Complete Node.js backend development mastery - from Express REST APIs to production deployment with Docker, testing, authentication, and performance optimization",
+  "author": "Plugin Agent Marketplace",
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-nodejs",
+  "homepage": "https://roadmap.sh/nodejs",
   "keywords": [
-    "learning",
-    "roadmap",
-    "career",
-    "programming",
-    "developer",
-    "skill-assessment",
-    "project-based-learning",
-    "interview-prep"
+    "nodejs",
+    "backend",
+    "express",
+    "rest-api",
+    "mongodb",
+    "postgresql",
+    "jwt",
+    "authentication",
+    "testing",
+    "jest",
+    "docker",
+    "deployment",
+    "async",
+    "performance",
+    "server-side",
+    "javascript"
   ],
   "agents": [
     {
-      "id": "career-path-advisor",
-      "name": "Career Path Advisor",
-      "file": "agents/01-career-path-advisor.md",
-      "description": "Guide users through different developer career paths and specializations"
+      "id": "nodejs-fundamentals",
+      "name": "Node.js Fundamentals",
+      "file": "agents/01-nodejs-fundamentals.md",
+      "description": "Master Node.js core concepts including event loop, modules, npm, and asynchronous programming patterns"
     },
     {
-      "id": "skill-assessment-expert",
-      "name": "Skill Assessment Expert",
-      "file": "agents/02-skill-assessment-expert.md",
-      "description": "Evaluate current skills and identify knowledge gaps"
+      "id": "express-framework",
+      "name": "Express Framework",
+      "file": "agents/02-express-framework.md",
+      "description": "Build production-ready REST APIs with Express.js including routing, middleware, and error handling"
     },
     {
-      "id": "learning-path-designer",
-      "name": "Learning Path Designer",
-      "file": "agents/03-learning-path-designer.md",
-      "description": "Create personalized, structured learning plans"
+      "id": "async-programming",
+      "name": "Async Programming",
+      "file": "agents/03-async-programming.md",
+      "description": "Master asynchronous programming with Promises, async/await, streams, and event-driven patterns"
     },
     {
-      "id": "project-mentor",
-      "name": "Project Mentor",
-      "file": "agents/04-project-mentor.md",
-      "description": "Guide through hands-on projects and practical applications"
+      "id": "database-integration",
+      "name": "Database Integration",
+      "file": "agents/04-database-integration.md",
+      "description": "Connect Node.js applications to databases including MongoDB, PostgreSQL, and MySQL with ORMs"
     },
     {
-      "id": "community-guide",
-      "name": "Community & Resources Guide",
-      "file": "agents/05-community-guide.md",
-      "description": "Connect learners with communities, resources, and best practices"
+      "id": "authentication-security",
+      "name": "Authentication & Security",
+      "file": "agents/05-authentication-security.md",
+      "description": "Implement secure authentication and authorization with JWT, OAuth, sessions, and security best practices"
     },
     {
-      "id": "progress-tracker",
-      "name": "Progress Tracker & Optimizer",
-      "file": "agents/06-progress-tracker.md",
-      "description": "Monitor learning progress and optimize learning strategies"
+      "id": "testing-debugging",
+      "name": "Testing & Debugging",
+      "file": "agents/06-testing-debugging.md",
+      "description": "Master testing and debugging Node.js applications with Jest, Mocha, and debugging tools"
     },
     {
-      "id": "interview-preparer",
-      "name": "Interview Preparer",
-      "file": "agents/07-interview-preparer.md",
-      "description": "Prepare for technical interviews and assessments"
+      "id": "deployment-scaling",
+      "name": "Deployment & Scaling",
+      "file": "agents/07-deployment-scaling.md",
+      "description": "Deploy and scale Node.js applications with Docker, PM2, clustering, load balancing, and cloud platforms"
     }
   ],
   "commands": [
     {
-      "name": "explore",
-      "file": "commands/explore.md",
-      "description": "Explore available developer roadmaps and specializations"
+      "name": "nodejs-start",
+      "file": "commands/start.md",
+      "description": "Get started with Node.js backend development"
     },
     {
-      "name": "assess",
-      "file": "commands/assess.md",
-      "description": "Assess your current skills and knowledge level"
+      "name": "nodejs-api",
+      "file": "commands/api.md",
+      "description": "Build a REST API with Express and MongoDB"
     },
     {
-      "name": "plan",
-      "file": "commands/plan.md",
-      "description": "Create a personalized learning plan"
+      "name": "nodejs-test",
+      "file": "commands/test.md",
+      "description": "Setup testing with Jest and Supertest"
     },
     {
-      "name": "projects",
-      "file": "commands/projects.md",
-      "description": "Discover hands-on projects to practice skills"
+      "name": "nodejs-deploy",
+      "file": "commands/deploy.md",
+      "description": "Deploy Node.js app to production with Docker"
     }
   ],
   "skills": [
     {
-      "id": "programming-languages",
-      "name": "Programming Languages",
-      "file": "skills/programming-languages/SKILL.md"
+      "id": "express-rest-api",
+      "name": "Express REST API",
+      "file": "skills/express-rest-api/SKILL.md"
     },
     {
-      "id": "frameworks-tools",
-      "name": "Frameworks & Tools",
-      "file": "skills/frameworks-tools/SKILL.md"
+      "id": "async-patterns",
+      "name": "Async Programming Patterns",
+      "file": "skills/async-patterns/SKILL.md"
     },
     {
-      "id": "specializations",
-      "name": "Developer Specializations",
-      "file": "skills/specializations/SKILL.md"
+      "id": "mongoose-mongodb",
+      "name": "Mongoose & MongoDB",
+      "file": "skills/mongoose-mongodb/SKILL.md"
     },
     {
-      "id": "databases-infrastructure",
-      "name": "Databases & Infrastructure",
-      "file": "skills/databases/SKILL.md"
+      "id": "jwt-authentication",
+      "name": "JWT Authentication",
+      "file": "skills/jwt-authentication/SKILL.md"
     },
     {
-      "id": "devops-cloud",
-      "name": "DevOps & Cloud",
-      "file": "skills/infrastructure/SKILL.md"
+      "id": "jest-testing",
+      "name": "Jest Testing",
+      "file": "skills/jest-testing/SKILL.md"
     },
     {
-      "id": "soft-skills",
-      "name": "Soft Skills & Communication",
-      "file": "skills/soft-skills/SKILL.md"
+      "id": "docker-deployment",
+      "name": "Docker Deployment",
+      "file": "skills/docker-deployment/SKILL.md"
     },
     {
-      "id": "interview-skills",
-      "name": "Interview & Assessment Skills",
-      "file": "skills/interview-prep/SKILL.md"
+      "id": "performance-optimization",
+      "name": "Performance Optimization",
+      "file": "skills/performance-optimization/SKILL.md"
     }
   ],
-  "hooks": [
-    {
-      "id": "progress-tracking",
-      "file": "hooks/hooks.json"
-    }
-  ]
+  "hooks": []
 }
