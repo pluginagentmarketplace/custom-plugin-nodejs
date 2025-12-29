@@ -1,3 +1,9 @@
+---
+name: plan
+description: /plan
+allowed-tools: Read
+---
+
 # /plan
 
 Create a personalized learning path tailored to your goals, current level, and available time.

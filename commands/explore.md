@@ -1,3 +1,9 @@
+---
+name: explore
+description: /explore
+allowed-tools: Read
+---
+
 # /explore
 
 Explore all available developer roadmaps, specializations, and learning pathways.

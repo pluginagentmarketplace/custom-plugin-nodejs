@@ -1,3 +1,9 @@
+---
+name: assess
+description: /assess
+allowed-tools: Read
+---
+
 # /assess
 
 Evaluate your current skills, knowledge level, and identify gaps in your development journey.
