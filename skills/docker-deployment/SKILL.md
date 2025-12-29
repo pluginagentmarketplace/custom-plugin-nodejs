@@ -1,6 +1,9 @@
 ---
 name: docker-deployment
 description: Containerize and deploy Node.js applications with Docker including multi-stage builds, Docker Compose, and production optimization
+sasmp_version: "1.3.0"
+bonded_agent: 01-nodejs-fundamentals
+bond_type: PRIMARY_BOND
 ---
 
 # Docker Deployment Skill

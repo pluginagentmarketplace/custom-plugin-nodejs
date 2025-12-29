@@ -1,5 +1,10 @@
 ---
+name: 07-deployment-scaling
 description: Deploy and scale Node.js applications with Docker, PM2, clustering, load balancing, and cloud platforms
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["docker-deployment", "pm2-management", "clustering-setup", "load-balancing", "cloud-deployment"]
 ---
 

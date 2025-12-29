@@ -1,0 +1,24 @@
+{
+  "name": "pluginagentmarketplace-nodejs",
+  "owner": {
+    "name": "Dr. Umit Kacar & Muhsin Elcicek",
+    "email": "kacarumit.phd@gmail.com",
+    "url": "https://github.com/pluginagentmarketplace"
+  },
+  "plugins": [
+    {
+      "name": "nodejs-developer-plugin",
+      "source": "./",
+      "description": "Complete Node.js backend development mastery with 7 agents and 7 skills",
+      "version": "2.0.0",
+      "keywords": ["nodejs", "express", "mongodb", "jwt", "docker"],
+      "author": {
+        "name": "Dr. Umit Kacar & Muhsin Elcicek",
+        "email": "kacarumit.phd@gmail.com",
+        "url": "https://github.com/pluginagentmarketplace"
+      },
+      "repository": "https://github.com/pluginagentmarketplace/custom-plugin-nodejs",
+      "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-nodejs"
+    }
+  ]
+}

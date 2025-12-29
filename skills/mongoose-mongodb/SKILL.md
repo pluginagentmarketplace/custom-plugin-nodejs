@@ -1,6 +1,9 @@
 ---
 name: mongoose-mongodb
 description: Work with MongoDB in Node.js using Mongoose ODM for schema design, CRUD operations, relationships, and advanced queries
+sasmp_version: "1.3.0"
+bonded_agent: 01-nodejs-fundamentals
+bond_type: PRIMARY_BOND
 ---
 
 # Mongoose & MongoDB Skill

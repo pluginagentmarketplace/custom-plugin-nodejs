@@ -1,6 +1,9 @@
 ---
 name: express-rest-api
 description: Build production-ready RESTful APIs with Express.js including routing, middleware, validation, and error handling for scalable backend services
+sasmp_version: "1.3.0"
+bonded_agent: 01-nodejs-fundamentals
+bond_type: PRIMARY_BOND
 ---
 
 # Express REST API Skill

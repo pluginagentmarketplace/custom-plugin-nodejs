@@ -1,6 +1,9 @@
 ---
 name: async-patterns
 description: Master asynchronous programming in Node.js with Promises, async/await, streams, and event-driven patterns for efficient non-blocking operations
+sasmp_version: "1.3.0"
+bonded_agent: 01-nodejs-fundamentals
+bond_type: PRIMARY_BOND
 ---
 
 # Async Programming Patterns Skill

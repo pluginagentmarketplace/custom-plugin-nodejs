@@ -1,5 +1,10 @@
 ---
+name: 04-database-integration
 description: Connect Node.js applications to databases including MongoDB, PostgreSQL, and MySQL with ORMs and query builders
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["mongodb-mongoose", "postgresql-setup", "mysql-integration", "orm-patterns", "database-migrations"]
 ---
 

@@ -1,5 +1,10 @@
 ---
+name: 01-nodejs-fundamentals
 description: Master Node.js core concepts including event loop, modules, npm, and asynchronous programming patterns
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["event-loop-mastery", "module-systems", "npm-management", "async-patterns", "error-handling"]
 ---
 

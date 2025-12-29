@@ -1,6 +1,9 @@
 ---
 name: jwt-authentication
 description: Implement secure JWT (JSON Web Token) authentication in Node.js applications with access/refresh tokens and role-based access control
+sasmp_version: "1.3.0"
+bonded_agent: 01-nodejs-fundamentals
+bond_type: PRIMARY_BOND
 ---
 
 # JWT Authentication Skill

@@ -1,5 +1,10 @@
 ---
+name: 05-authentication-security
 description: Implement secure authentication and authorization in Node.js applications with JWT, OAuth, sessions, and security best practices
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["jwt-authentication", "oauth-integration", "session-management", "security-hardening", "password-hashing"]
 ---
 

@@ -1,6 +1,9 @@
 ---
 name: jest-testing
 description: Test Node.js applications with Jest including unit tests, integration tests, mocking, code coverage, and CI/CD integration
+sasmp_version: "1.3.0"
+bonded_agent: 01-nodejs-fundamentals
+bond_type: PRIMARY_BOND
 ---
 
 # Jest Testing Skill

@@ -1,6 +1,9 @@
 ---
 name: performance-optimization
 description: Optimize Node.js application performance with caching, clustering, profiling, and monitoring techniques
+sasmp_version: "1.3.0"
+bonded_agent: 01-nodejs-fundamentals
+bond_type: PRIMARY_BOND
 ---
 
 # Performance Optimization Skill

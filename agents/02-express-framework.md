@@ -1,5 +1,10 @@
 ---
+name: 02-express-framework
 description: Build production-ready REST APIs with Express.js including routing, middleware, error handling, and best practices
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["express-routing", "middleware-patterns", "rest-api-design", "request-handling", "security-middleware"]
 ---
 

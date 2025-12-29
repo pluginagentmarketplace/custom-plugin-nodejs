@@ -1,131 +1,39 @@
 {
-  "name": "nodejs-developer",
-  "version": "1.0.0",
-  "displayName": "Node.js Developer Pro",
+  "name": "nodejs-developer-plugin",
+  "version": "2.0.0",
   "description": "Complete Node.js backend development mastery - from Express REST APIs to production deployment with Docker, testing, authentication, and performance optimization",
-  "author": "Plugin Agent Marketplace",
+  "author": {
+    "name": "Dr. Umit Kacar & Muhsin Elcicek",
+    "email": "kacarumit.phd@gmail.com",
+    "url": "https://github.com/pluginagentmarketplace"
+  },
+  "homepage": "https://github.com/pluginagentmarketplace/custom-plugin-nodejs",
   "repository": "https://github.com/pluginagentmarketplace/custom-plugin-nodejs",
-  "homepage": "https://roadmap.sh/nodejs",
-  "keywords": [
-    "nodejs",
-    "backend",
-    "express",
-    "rest-api",
-    "mongodb",
-    "postgresql",
-    "jwt",
-    "authentication",
-    "testing",
-    "jest",
-    "docker",
-    "deployment",
-    "async",
-    "performance",
-    "server-side",
-    "javascript"
-  ],
+  "license": "MIT",
+  "keywords": ["nodejs", "backend", "express", "rest-api", "mongodb", "jwt", "docker", "claude-code", "plugin"],
   "agents": [
-    {
-      "id": "nodejs-fundamentals",
-      "name": "Node.js Fundamentals",
-      "file": "agents/01-nodejs-fundamentals.md",
-      "description": "Master Node.js core concepts including event loop, modules, npm, and asynchronous programming patterns"
-    },
-    {
-      "id": "express-framework",
-      "name": "Express Framework",
-      "file": "agents/02-express-framework.md",
-      "description": "Build production-ready REST APIs with Express.js including routing, middleware, and error handling"
-    },
-    {
-      "id": "async-programming",
-      "name": "Async Programming",
-      "file": "agents/03-async-programming.md",
-      "description": "Master asynchronous programming with Promises, async/await, streams, and event-driven patterns"
-    },
-    {
-      "id": "database-integration",
-      "name": "Database Integration",
-      "file": "agents/04-database-integration.md",
-      "description": "Connect Node.js applications to databases including MongoDB, PostgreSQL, and MySQL with ORMs"
-    },
-    {
-      "id": "authentication-security",
-      "name": "Authentication & Security",
-      "file": "agents/05-authentication-security.md",
-      "description": "Implement secure authentication and authorization with JWT, OAuth, sessions, and security best practices"
-    },
-    {
-      "id": "testing-debugging",
-      "name": "Testing & Debugging",
-      "file": "agents/06-testing-debugging.md",
-      "description": "Master testing and debugging Node.js applications with Jest, Mocha, and debugging tools"
-    },
-    {
-      "id": "deployment-scaling",
-      "name": "Deployment & Scaling",
-      "file": "agents/07-deployment-scaling.md",
-      "description": "Deploy and scale Node.js applications with Docker, PM2, clustering, load balancing, and cloud platforms"
-    }
-  ],
-  "commands": [
-    {
-      "name": "nodejs-start",
-      "file": "commands/start.md",
-      "description": "Get started with Node.js backend development"
-    },
-    {
-      "name": "nodejs-api",
-      "file": "commands/api.md",
-      "description": "Build a REST API with Express and MongoDB"
-    },
-    {
-      "name": "nodejs-test",
-      "file": "commands/test.md",
-      "description": "Setup testing with Jest and Supertest"
-    },
-    {
-      "name": "nodejs-deploy",
-      "file": "commands/deploy.md",
-      "description": "Deploy Node.js app to production with Docker"
-    }
+    "./agents/01-nodejs-fundamentals.md",
+    "./agents/02-express-framework.md",
+    "./agents/03-async-programming.md",
+    "./agents/04-database-integration.md",
+    "./agents/05-authentication-security.md",
+    "./agents/06-testing-debugging.md",
+    "./agents/07-deployment-scaling.md"
   ],
   "skills": [
-    {
-      "id": "express-rest-api",
-      "name": "Express REST API",
-      "file": "skills/express-rest-api/SKILL.md"
-    },
-    {
-      "id": "async-patterns",
-      "name": "Async Programming Patterns",
-      "file": "skills/async-patterns/SKILL.md"
-    },
-    {
-      "id": "mongoose-mongodb",
-      "name": "Mongoose & MongoDB",
-      "file": "skills/mongoose-mongodb/SKILL.md"
-    },
-    {
-      "id": "jwt-authentication",
-      "name": "JWT Authentication",
-      "file": "skills/jwt-authentication/SKILL.md"
-    },
-    {
-      "id": "jest-testing",
-      "name": "Jest Testing",
-      "file": "skills/jest-testing/SKILL.md"
-    },
-    {
-      "id": "docker-deployment",
-      "name": "Docker Deployment",
-      "file": "skills/docker-deployment/SKILL.md"
-    },
-    {
-      "id": "performance-optimization",
-      "name": "Performance Optimization",
-      "file": "skills/performance-optimization/SKILL.md"
-    }
+    "./skills/async-patterns/SKILL.md",
+    "./skills/docker-deployment/SKILL.md",
+    "./skills/express-rest-api/SKILL.md",
+    "./skills/jest-testing/SKILL.md",
+    "./skills/jwt-authentication/SKILL.md",
+    "./skills/mongoose-mongodb/SKILL.md",
+    "./skills/performance-optimization/SKILL.md"
   ],
-  "hooks": []
+  "commands": [
+    "./commands/api.md",
+    "./commands/deploy.md",
+    "./commands/start.md",
+    "./commands/test.md"
+  ],
+  "hooks": "./hooks/hooks.json"
 }

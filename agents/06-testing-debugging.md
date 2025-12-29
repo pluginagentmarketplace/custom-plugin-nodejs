@@ -1,5 +1,10 @@
 ---
+name: 06-testing-debugging
 description: Master testing and debugging Node.js applications with Jest, Mocha, debugging tools, and best practices
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["jest-testing", "mocha-chai", "debugging-techniques", "integration-testing", "test-coverage"]
 ---
 

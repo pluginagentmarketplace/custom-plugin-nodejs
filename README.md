@@ -1,324 +1,223 @@
-# Node.js Developer Pro - Claude Code Plugin
+<div align="center">
 
-Complete Node.js backend development mastery from fundamentals to production deployment. Master Express REST APIs, databases, authentication, testing, Docker, and performance optimization based on the official [Node.js Developer Roadmap](https://roadmap.sh/nodejs).
+# Node.js Developer Plugin
 
-## Overview
+### Complete Node.js Backend Mastery for Claude Code
 
-**Node.js Developer Pro** is a comprehensive Claude Code plugin designed to guide you through modern backend development with Node.js:
+**Master Express REST APIs, MongoDB, JWT authentication, testing, and production deployment with 7 specialized agents and 7 production-ready skills**
 
-- **7 Specialized Agents** - Expert guidance across all aspects of Node.js development
-- **7 Core Skills** - Hands-on skills covering Express, MongoDB, JWT, Testing, Docker, and more
-- **4 Interactive Commands** - Quick-start guides for common Node.js tasks
-- **Production-Ready Patterns** - Real-world examples and best practices
-- **100% Backend Focus** - No frontend or Python content
+[![Verified](https://img.shields.io/badge/Verified-Working-success?style=flat-square&logo=checkmarx)](https://github.com/pluginagentmarketplace/custom-plugin-nodejs)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+[![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-nodejs)
+[![Status](https://img.shields.io/badge/Status-Production_Ready-brightgreen?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-nodejs)
+[![Agents](https://img.shields.io/badge/Agents-7-orange?style=flat-square)](#agents-overview)
+[![Skills](https://img.shields.io/badge/Skills-7-purple?style=flat-square)](#skills-reference)
+[![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-blueviolet?style=flat-square)](#)
 
-## Key Features
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](skills/async-patterns/)
+[![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)](skills/express-rest-api/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](skills/mongoose-mongodb/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](skills/docker-deployment/)
 
-### 7 Expert Agents
+[Quick Start](#quick-start) | [Agents](#agents-overview) | [Skills](#skills-reference) | [Commands](#commands)
 
-1. **Node.js Fundamentals** - Event loop, modules, npm, and async programming
-2. **Express Framework** - REST APIs, routing, middleware, error handling
-3. **Async Programming** - Promises, async/await, streams, event-driven patterns
-4. **Database Integration** - MongoDB, PostgreSQL, MySQL, ORMs (Mongoose, Sequelize, Prisma)
-5. **Authentication & Security** - JWT, OAuth, sessions, security best practices
-6. **Testing & Debugging** - Jest, Mocha, Supertest, debugging techniques
-7. **Deployment & Scaling** - Docker, PM2, clustering, load balancing, cloud platforms
+</div>
 
-### 7 Core Skills
+---
 
-1. **Express REST API** - Build production-ready RESTful APIs
-2. **Async Patterns** - Master asynchronous JavaScript
-3. **Mongoose & MongoDB** - NoSQL database integration
-4. **JWT Authentication** - Secure authentication flows
-5. **Jest Testing** - Comprehensive test coverage
-6. **Docker Deployment** - Containerize Node.js applications
-7. **Performance Optimization** - Caching, clustering, profiling
+## Verified Installation
 
-### 4 Quick-Start Commands
+> **This plugin has been tested and verified working on Claude Code.**
+> Last verified: December 2025
 
-```bash
-/nodejs-start      # Get started with Node.js development
-/nodejs-api        # Build a REST API with Express + MongoDB
-/nodejs-test       # Setup testing with Jest
-/nodejs-deploy     # Deploy to production with Docker
-```
+---
 
 ## Quick Start
 
-### Installation
+### Option 1: Install from GitHub (Recommended)
 
 ```bash
-# Clone or install the plugin
-git clone https://github.com/pluginagentmarketplace/custom-plugin-nodejs.git
+# Step 1: Add the marketplace from GitHub
+/plugin add marketplace pluginagentmarketplace/custom-plugin-nodejs
 
-# In Claude Code, add the plugin
-plugin add ./custom-plugin-nodejs
+# Step 2: Install the plugin
+/plugin install nodejs-developer-plugin@pluginagentmarketplace-nodejs
+
+# Step 3: Restart Claude Code to load new plugins
 ```
 
-### First Steps
+### Option 2: Clone and Load Locally
 
-1. **Learn Fundamentals**
-   - Understand Node.js event loop
-   - Master async/await patterns
-   - Set up your first Express server
+```bash
+# Clone the repository
+git clone https://github.com/pluginagentmarketplace/custom-plugin-nodejs.git
 
-2. **Build an API**
-   - Create REST endpoints
-   - Connect to MongoDB
-   - Implement JWT authentication
+# Navigate to the directory in Claude Code
+cd custom-plugin-nodejs
 
-3. **Test Your Code**
-   - Write unit tests with Jest
-   - Test APIs with Supertest
-   - Achieve 80%+ coverage
+# Load the plugin
+/plugin load .
+```
 
-4. **Deploy to Production**
-   - Containerize with Docker
-   - Use PM2 for process management
-   - Deploy to cloud platforms
+After loading, restart Claude Code.
 
-## What You'll Learn
+### Verify Installation
 
-### Backend Foundations
-- Node.js runtime architecture
-- Event loop and non-blocking I/O
-- Module systems (CommonJS and ES Modules)
-- NPM package management
-- Environment configuration
+After restarting Claude Code, verify the plugin is loaded. You should see these agents available:
 
-### REST API Development
-- Express.js framework
-- RESTful design principles
-- Route organization (MVC pattern)
-- Middleware patterns
-- Request validation
-- Error handling
-- API versioning
+```
+custom-plugin-nodejs:01-nodejs-fundamentals
+custom-plugin-nodejs:02-express-framework
+custom-plugin-nodejs:03-async-programming
+custom-plugin-nodejs:04-database-integration
+custom-plugin-nodejs:05-authentication-security
+custom-plugin-nodejs:06-testing-debugging
+custom-plugin-nodejs:07-deployment-scaling
+```
 
-### Database Integration
-- **MongoDB** with Mongoose ODM
-  - Schema design
-  - CRUD operations
-  - Relationships and population
-  - Aggregation pipelines
-- **PostgreSQL** with pg/Sequelize
-  - Parameterized queries
-  - Transactions
-  - JOINs and complex queries
-- **Prisma** modern ORM
-  - Type-safe database access
-  - Auto-generated migrations
+---
 
-### Authentication & Security
-- JWT token-based authentication
-- Access and refresh tokens
-- Password hashing with bcrypt
-- OAuth 2.0 integration
-- Role-based access control (RBAC)
-- Security headers (Helmet.js)
-- CORS configuration
-- Rate limiting
-- Input validation
+## Available Skills
 
-### Testing Strategies
-- Unit testing with Jest
-- Integration testing with Supertest
-- Mocking and spying
-- Test coverage reports
-- CI/CD integration
-- TDD/BDD approaches
+Once installed, these 7 skills become available:
 
-### Deployment & DevOps
-- Docker containerization
-- Multi-stage Docker builds
-- Docker Compose for services
-- PM2 process management
-- Clustering for multi-core usage
-- Nginx reverse proxy
-- Load balancing strategies
-- Cloud deployment (AWS, Heroku, DigitalOcean)
-- CI/CD pipelines
+| Skill | Invoke Command | Description |
+|-------|----------------|-------------|
+| Async Patterns | `Skill("nodejs-developer-plugin:async-patterns")` | Promises, async/await, streams |
+| Docker Deployment | `Skill("nodejs-developer-plugin:docker-deployment")` | Containerization, PM2, cloud |
+| Express REST API | `Skill("nodejs-developer-plugin:express-rest-api")` | Routes, middleware, validation |
+| Jest Testing | `Skill("nodejs-developer-plugin:jest-testing")` | Unit tests, Supertest, coverage |
+| JWT Authentication | `Skill("nodejs-developer-plugin:jwt-authentication")` | Tokens, OAuth, security |
+| Mongoose MongoDB | `Skill("nodejs-developer-plugin:mongoose-mongodb")` | Schema, CRUD, aggregation |
+| Performance Optimization | `Skill("nodejs-developer-plugin:performance-optimization")` | Caching, clustering, profiling |
 
-### Performance Optimization
-- Caching with Redis
-- Database query optimization
-- Response compression
-- Connection pooling
-- CPU profiling
-- Memory leak detection
-- Monitoring and logging
+---
 
-## Learning Paths
+## What This Plugin Does
 
-### Beginner Path (3-4 months)
+This plugin provides **7 specialized agents** and **7 production-ready skills** for complete Node.js backend mastery:
 
-**Month 1: Fundamentals**
-- Install Node.js and npm
-- Understand event loop
-- Learn async/await
-- Build first Express server
-- Connect to MongoDB
+| Agent | Purpose |
+|-------|---------|
+| **Node.js Fundamentals** | Event loop, modules, npm, async programming |
+| **Express Framework** | REST APIs, routing, middleware, error handling |
+| **Async Programming** | Promises, async/await, streams, event-driven |
+| **Database Integration** | MongoDB, PostgreSQL, MySQL, ORMs |
+| **Authentication Security** | JWT, OAuth, sessions, security best practices |
+| **Testing Debugging** | Jest, Mocha, Supertest, debugging techniques |
+| **Deployment Scaling** | Docker, PM2, clustering, load balancing |
 
-**Month 2: REST APIs**
-- Design RESTful endpoints
-- Implement CRUD operations
-- Add input validation
-- Error handling
-- Pagination and filtering
+---
 
-**Month 3: Authentication & Testing**
-- Implement JWT authentication
-- User registration/login
-- Protected routes
-- Write Jest tests
-- API testing with Supertest
+## Agents Overview
 
-**Month 4: Deployment**
-- Dockerize application
-- Use PM2 for production
-- Deploy to cloud
-- Setup monitoring
+### 7 Implementation Agents
 
-### Intermediate Path (5-6 months)
+Each agent is designed to **do the work**, not just explain:
 
-**Months 1-3: Build Complete Projects**
-- RESTful blog API
-- E-commerce backend
-- Social media API
-- Real-time chat server
+| Agent | Capabilities | Example Prompts |
+|-------|--------------|-----------------|
+| **Fundamentals** | Event loop, modules, npm | `"Explain event loop"`, `"Setup npm project"` |
+| **Express** | REST APIs, middleware | `"Create Express API"`, `"Add middleware"` |
+| **Async** | Promises, streams, events | `"Async/await patterns"`, `"Stream processing"` |
+| **Database** | MongoDB, PostgreSQL, ORMs | `"Setup Mongoose"`, `"Prisma schema"` |
+| **Auth Security** | JWT, OAuth, RBAC | `"JWT authentication"`, `"OAuth2 flow"` |
+| **Testing** | Jest, Supertest, coverage | `"Write Jest tests"`, `"API testing"` |
+| **Deployment** | Docker, PM2, cloud | `"Dockerize app"`, `"PM2 setup"` |
 
-**Months 4-5: Advanced Topics**
-- Microservices architecture
-- Event-driven systems
-- GraphQL integration
-- WebSocket servers
-- Background job processing
+---
 
-**Month 6: Production Mastery**
-- Load balancing
-- Auto-scaling
-- Performance tuning
-- Security hardening
-- Monitoring and alerting
+## Commands
 
-### Advanced Path (6-12 months)
+4 interactive commands for Node.js development workflows:
 
-- Microservices with Docker Swarm/Kubernetes
-- Message queues (RabbitMQ, Kafka)
-- Serverless architecture
-- Performance optimization at scale
-- System design for Node.js
-- Contributing to open source
+| Command | Usage | Description |
+|---------|-------|-------------|
+| `/start` | `/start` | Get started with Node.js development |
+| `/api` | `/api` | Build REST API with Express + MongoDB |
+| `/test` | `/test` | Setup testing with Jest |
+| `/deploy` | `/deploy` | Deploy to production with Docker |
 
-## Real-World Projects
+---
 
-### Project 1: Task Management API
-**Tech Stack**: Express + MongoDB + JWT
+## Skills Reference
 
-- User authentication
-- CRUD operations for tasks
-- Task assignment and status
-- Filtering and pagination
-- Role-based permissions
+Each skill includes **Golden Format** content:
+- `assets/` - Configuration templates and setup files
+- `scripts/` - Automation and validation scripts
+- `references/` - Methodology guides and best practices
 
-### Project 2: E-Commerce Backend
-**Tech Stack**: Express + PostgreSQL + Stripe
+### All 7 Skills by Category
 
-- Product catalog
-- Shopping cart
-- Payment processing
-- Order management
-- Inventory tracking
-- Admin dashboard
+| Category | Skills |
+|----------|--------|
+| **Core** | async-patterns |
+| **API** | express-rest-api |
+| **Database** | mongoose-mongodb |
+| **Security** | jwt-authentication |
+| **Testing** | jest-testing |
+| **DevOps** | docker-deployment |
+| **Performance** | performance-optimization |
 
-### Project 3: Social Media API
-**Tech Stack**: Express + MongoDB + Socket.io
+---
 
-- User profiles
-- Post creation and feeds
-- Comments and likes
-- Real-time notifications
-- File uploads (S3)
-- Search functionality
+## Usage Examples
 
-### Project 4: Analytics Dashboard API
-**Tech Stack**: Express + PostgreSQL + Redis
+### Example 1: Create Express REST API
 
-- Data collection endpoints
-- Aggregation queries
-- Caching layer
-- Report generation
-- CSV exports
-- Scheduled jobs
+```javascript
+// Before: No backend
 
-## Tech Stack Coverage
+// After (with Express Framework agent):
+Skill("nodejs-developer-plugin:express-rest-api")
 
-### Core Technologies
-- **Node.js** (v18+)
-- **JavaScript ES6+**
-- **TypeScript** (optional)
+// Generates:
+// - Express server setup
+// - Route structure (MVC)
+// - Middleware configuration
+// - Error handling
+```
 
-### Frameworks & Libraries
-- **Express.js** - Web framework
-- **Fastify** - Alternative framework
-- **Koa.js** - Modern framework
+### Example 2: Setup MongoDB with Mongoose
 
-### Databases
-- **MongoDB** with Mongoose
-- **PostgreSQL** with pg/Sequelize
-- **MySQL** with mysql2
-- **Redis** for caching
+```javascript
+// Before: Manual database setup
 
-### Authentication
-- **jsonwebtoken** - JWT implementation
-- **passport.js** - Authentication strategies
-- **bcryptjs** - Password hashing
+// After (with Database agent):
+Skill("nodejs-developer-plugin:mongoose-mongodb")
 
-### Testing
-- **Jest** - Test framework
-- **Mocha** + **Chai** - Alternative stack
-- **Supertest** - API testing
-- **Sinon** - Mocking
+// Provides:
+// - Schema definitions
+// - Model configuration
+// - CRUD operations
+// - Aggregation pipelines
+```
 
-### DevOps
-- **Docker** - Containerization
-- **PM2** - Process management
-- **Nginx** - Reverse proxy
-- **GitHub Actions** - CI/CD
+### Example 3: Implement JWT Authentication
 
-### Utilities
-- **dotenv** - Environment variables
-- **helmet** - Security headers
-- **cors** - Cross-origin requests
-- **morgan** - HTTP logging
-- **winston** - Application logging
-- **express-validator** - Input validation
+```javascript
+// Before: No authentication
 
-## Best Practices Included
+// After (with Auth Security agent):
+Skill("nodejs-developer-plugin:jwt-authentication")
 
-- ✅ Clean code architecture (MVC/service layer)
-- ✅ Error handling patterns
-- ✅ Input validation
-- ✅ Security best practices (OWASP)
-- ✅ RESTful API design
-- ✅ Database optimization
-- ✅ Caching strategies
-- ✅ Testing strategies (>80% coverage)
-- ✅ Documentation (JSDoc, Swagger)
-- ✅ Git workflow
-- ✅ Environment-based configuration
-- ✅ Logging and monitoring
-- ✅ Code reviews
-- ✅ Production deployment
+// Creates:
+// - Token generation
+// - Refresh token flow
+// - Protected routes
+// - RBAC implementation
+```
+
+---
 
 ## Plugin Structure
 
 ```
 custom-plugin-nodejs/
 ├── .claude-plugin/
-│   └── plugin.json              # Plugin manifest
-│
-├── agents/                       # 7 Expert Agents
+│   ├── plugin.json           # Plugin manifest
+│   └── marketplace.json      # Marketplace config
+├── agents/                   # 7 specialized agents
 │   ├── 01-nodejs-fundamentals.md
 │   ├── 02-express-framework.md
 │   ├── 03-async-programming.md
@@ -326,123 +225,116 @@ custom-plugin-nodejs/
 │   ├── 05-authentication-security.md
 │   ├── 06-testing-debugging.md
 │   └── 07-deployment-scaling.md
-│
-├── skills/                       # 7 Core Skills
-│   ├── express-rest-api/SKILL.md
+├── skills/                   # 7 skills (Golden Format)
 │   ├── async-patterns/SKILL.md
-│   ├── mongoose-mongodb/SKILL.md
-│   ├── jwt-authentication/SKILL.md
-│   ├── jest-testing/SKILL.md
 │   ├── docker-deployment/SKILL.md
+│   ├── express-rest-api/SKILL.md
+│   ├── jest-testing/SKILL.md
+│   ├── jwt-authentication/SKILL.md
+│   ├── mongoose-mongodb/SKILL.md
 │   └── performance-optimization/SKILL.md
-│
-├── commands/                     # 4 Quick-Start Commands
-│   ├── start.md
+├── commands/                 # 4 slash commands
 │   ├── api.md
-│   ├── test.md
-│   └── deploy.md
-│
-└── README.md                     # This file
+│   ├── deploy.md
+│   ├── start.md
+│   └── test.md
+├── hooks/hooks.json
+├── README.md
+├── CHANGELOG.md
+└── LICENSE
 ```
-
-## Use Cases
-
-### For Career Changers
-- Learn backend development from scratch
-- Build portfolio projects
-- Prepare for Node.js interviews
-- Transition to backend developer role
-
-### For Beginners
-- Step-by-step learning path
-- Real-world project examples
-- Best practices from day one
-- Guided hands-on practice
-
-### For Intermediate Developers
-- Deepen Node.js knowledge
-- Learn advanced patterns
-- Master deployment and scaling
-- Production-ready implementations
-
-### For Senior Developers
-- Architecture patterns
-- Performance optimization
-- Microservices design
-- Mentoring and code review
-
-## Resources & References
-
-### Official Documentation
-- [Node.js Official Docs](https://nodejs.org/docs)
-- [Express.js Documentation](https://expressjs.com)
-- [MongoDB Manual](https://docs.mongodb.com)
-- [Jest Documentation](https://jestjs.io)
-- [Docker Documentation](https://docs.docker.com)
-
-### Learning Resources
-- [Node.js Roadmap](https://roadmap.sh/nodejs)
-- [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices)
-- [JavaScript.info](https://javascript.info)
-- [MDN Web Docs](https://developer.mozilla.org)
-
-### Community
-- [Node.js Official Community](https://nodejs.org/en/community/)
-- [Express.js GitHub](https://github.com/expressjs/express)
-- [r/node on Reddit](https://reddit.com/r/node)
-- [Stack Overflow - Node.js](https://stackoverflow.com/questions/tagged/node.js)
-
-## Requirements
-
-- Node.js 18+ (LTS recommended)
-- npm 8+ or yarn 1.22+
-- Basic JavaScript knowledge
-- Code editor (VS Code recommended)
-- Terminal/command line familiarity
-- Claude Code (latest version)
-
-## Version
-
-- **Current**: 1.0.0
-- **Release Date**: November 2024
-- **Status**: Production Ready
-- **Roadmap Based**: roadmap.sh/nodejs (November 2025)
-
-## License
-
-This plugin is provided for educational and professional development purposes.
-
-## Contributing
-
-Contributions, issues, and feature requests are welcome!
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## Acknowledgments
-
-- Based on the excellent [roadmap.sh Node.js path](https://roadmap.sh/nodejs)
-- Inspired by the Node.js community
-- Built for developers by developers
 
 ---
 
-## Ready to Master Node.js Backend Development?
+## Technology Coverage
 
-```bash
-# Start your journey
-/nodejs-start
+| Category | Technologies |
+|----------|--------------|
+| **Runtime** | Node.js 18+, npm, yarn |
+| **Framework** | Express.js, Fastify, Koa |
+| **Database** | MongoDB, PostgreSQL, MySQL, Redis |
+| **ORM** | Mongoose, Sequelize, Prisma |
+| **Auth** | JWT, Passport.js, bcrypt, OAuth 2.0 |
+| **Testing** | Jest, Mocha, Supertest, Sinon |
+| **DevOps** | Docker, PM2, Nginx, GitHub Actions |
+| **Security** | Helmet, CORS, Rate Limiting |
 
-# Build your first API
-/nodejs-api
+---
 
-# Learn testing
-/nodejs-test
+## Learning Paths
 
-# Deploy to production
-/nodejs-deploy
+| Path | Duration | Focus |
+|------|----------|-------|
+| Beginner | 3-4 months | Fundamentals, REST APIs, MongoDB |
+| Intermediate | 5-6 months | Advanced patterns, microservices |
+| Advanced | 6-12 months | Architecture, scaling, optimization |
 
-# And become a Node.js backend expert! 🚀
-```
+### Recommended Sequence
+1. Node.js Fundamentals
+2. Express Framework
+3. Async Programming
+4. Database Integration
+5. Authentication Security
+6. Testing Debugging
+7. Deployment Scaling
 
-**Happy Coding! 💻**
+---
 
-For questions, support, or feedback, visit the [GitHub repository](https://github.com/pluginagentmarketplace/custom-plugin-nodejs).
+## Requirements
+
+| Requirement | Version |
+|-------------|---------|
+| Node.js | 18+ (LTS) |
+| npm | 8+ |
+| Docker | 20+ (optional) |
+| MongoDB | 6+ (for database skills) |
+
+---
+
+## Metadata
+
+| Field | Value |
+|-------|-------|
+| **Last Updated** | 2025-12-28 |
+| **Maintenance Status** | Active |
+| **SASMP Version** | 1.3.0 |
+| **Support** | [Issues](../../issues) |
+
+---
+
+## License
+
+MIT License - See [LICENSE](LICENSE) for details.
+
+---
+
+## Contributing
+
+Contributions are welcome:
+
+1. Fork the repository
+2. Create a feature branch
+3. Follow the Golden Format for new skills
+4. Submit a pull request
+
+---
+
+## Contributors
+
+**Authors:**
+- **Dr. Umit Kacar** - Senior AI Researcher & Engineer
+- **Muhsin Elcicek** - Senior Software Architect
+
+---
+
+<div align="center">
+
+**Master Node.js backend development with AI assistance!**
+
+[![Made for Node.js](https://img.shields.io/badge/Made%20for-Node.js%20Developers-339933?style=for-the-badge&logo=nodedotjs)](https://github.com/pluginagentmarketplace/custom-plugin-nodejs)
+
+**Built by Dr. Umit Kacar & Muhsin Elcicek**
+
+*Based on [roadmap.sh/nodejs](https://roadmap.sh/nodejs)*
+
+</div>

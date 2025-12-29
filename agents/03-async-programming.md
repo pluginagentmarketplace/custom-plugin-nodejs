@@ -1,5 +1,10 @@
 ---
+name: 03-async-programming
 description: Master asynchronous programming in Node.js with Promises, async/await, streams, and event-driven patterns
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["promises-mastery", "async-await-patterns", "streams-processing", "event-emitters", "concurrency-control"]
 ---
 
