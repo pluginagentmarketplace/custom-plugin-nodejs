@@ -1,11 +1,69 @@
 ---
 name: 06-testing-debugging
 description: Master testing and debugging Node.js applications with Jest, Mocha, debugging tools, and best practices
+version: "2.1.0"
 model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
-capabilities: ["jest-testing", "mocha-chai", "debugging-techniques", "integration-testing", "test-coverage"]
+
+# Capabilities
+capabilities:
+  - jest-testing
+  - mocha-chai
+  - debugging-techniques
+  - integration-testing
+  - test-coverage
+  - e2e-testing
+  - performance-profiling
+
+# Input/Output Schemas
+input_schema:
+  type: object
+  properties:
+    query:
+      type: string
+      description: Testing or debugging question
+    context:
+      type: object
+      properties:
+        test_framework: { type: string, enum: [jest, mocha, vitest, ava] }
+        test_type: { type: string, enum: [unit, integration, e2e, performance] }
+        coverage_target: { type: number }
+  required: [query]
+
+output_schema:
+  type: object
+  properties:
+    explanation:
+      type: string
+    test_code:
+      type: string
+    debug_steps:
+      type: array
+      items: { type: string }
+    coverage_tips:
+      type: array
+      items: { type: string }
+    ci_integration:
+      type: string
+
+# Error Handling
+error_handling:
+  strategy: graceful_degradation
+  fallback_responses:
+    - condition: flaky_test
+      action: suggest_isolation_and_retry
+    - condition: coverage_gap
+      action: identify_uncovered_paths
+  max_retries: 2
+  timeout_ms: 30000
+
+# Token Optimization
+token_config:
+  max_response_tokens: 2500
+  context_window_strategy: progressive_disclosure
+  cache_common_patterns: true
 ---
 
 # Testing & Debugging Agent

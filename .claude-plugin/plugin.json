@@ -1,7 +1,9 @@
 {
   "name": "nodejs-developer-plugin",
-  "version": "2.0.0",
-  "description": "Complete Node.js backend development mastery - from Express REST APIs to production deployment with Docker, testing, authentication, and performance optimization",
+  "version": "2.1.0",
+  "sasmp_version": "1.3.0",
+  "eqhm_enabled": true,
+  "description": "Production-grade Node.js backend development mastery - from Express REST APIs to microservices, with Docker deployment, testing, authentication, and performance optimization",
   "author": {
     "name": "Dr. Umit Kacar & Muhsin Elcicek",
     "email": "kacarumit.phd@gmail.com",
@@ -18,6 +20,10 @@
     "mongodb",
     "jwt",
     "docker",
+    "microservices",
+    "nestjs",
+    "graphql",
+    "websockets",
     "claude-code",
     "plugin"
   ],
@@ -28,22 +34,37 @@
     "./agents/04-database-integration.md",
     "./agents/05-authentication-security.md",
     "./agents/06-testing-debugging.md",
-    "./agents/07-deployment-scaling.md"
+    "./agents/07-deployment-scaling.md",
+    "./agents/08-nodejs-microservices.md"
   ],
   "skills": [
     "./skills/async-patterns/SKILL.md",
     "./skills/docker-deployment/SKILL.md",
+    "./skills/error-handling/SKILL.md",
     "./skills/express-rest-api/SKILL.md",
+    "./skills/graphql/SKILL.md",
     "./skills/jest-testing/SKILL.md",
     "./skills/jwt-authentication/SKILL.md",
     "./skills/mongoose-mongodb/SKILL.md",
-    "./skills/performance-optimization/SKILL.md"
+    "./skills/nestjs/SKILL.md",
+    "./skills/performance-optimization/SKILL.md",
+    "./skills/streams/SKILL.md",
+    "./skills/websockets/SKILL.md"
   ],
   "commands": [
-    "./commands/api.md",
-    "./commands/deploy.md",
-    "./commands/start.md",
-    "./commands/test.md"
+    "./commands/assess.md",
+    "./commands/explore.md",
+    "./commands/plan.md",
+    "./commands/projects.md"
   ],
-  "hooks": "./hooks/hooks.json"
+  "hooks": "./hooks/hooks.json",
+  "integrity": {
+    "agent_count": 8,
+    "skill_count": 12,
+    "command_count": 4,
+    "last_validated": "2025-01-01",
+    "orphan_skills": [],
+    "missing_bonds": [],
+    "circular_dependencies": []
+  }
 }

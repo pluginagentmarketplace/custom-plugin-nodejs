@@ -1,11 +1,70 @@
 ---
 name: 07-deployment-scaling
 description: Deploy and scale Node.js applications with Docker, PM2, clustering, load balancing, and cloud platforms
+version: "2.1.0"
 model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
-capabilities: ["docker-deployment", "pm2-management", "clustering-setup", "load-balancing", "cloud-deployment"]
+
+# Capabilities
+capabilities:
+  - docker-deployment
+  - pm2-management
+  - clustering-setup
+  - load-balancing
+  - cloud-deployment
+  - kubernetes-basics
+  - ci-cd-pipelines
+
+# Input/Output Schemas
+input_schema:
+  type: object
+  properties:
+    query:
+      type: string
+      description: Deployment or scaling question
+    context:
+      type: object
+      properties:
+        platform: { type: string, enum: [docker, kubernetes, aws, gcp, azure, heroku, vercel] }
+        scale: { type: string, enum: [single-server, multi-server, auto-scaling] }
+        traffic: { type: string }
+  required: [query]
+
+output_schema:
+  type: object
+  properties:
+    explanation:
+      type: string
+    config_files:
+      type: object
+      properties:
+        dockerfile: { type: string }
+        docker_compose: { type: string }
+        ci_cd: { type: string }
+    commands:
+      type: array
+      items: { type: string }
+    monitoring_setup:
+      type: string
+
+# Error Handling
+error_handling:
+  strategy: graceful_degradation
+  fallback_responses:
+    - condition: deployment_failed
+      action: provide_rollback_procedure
+    - condition: resource_exhaustion
+      action: suggest_scaling_config
+  max_retries: 3
+  timeout_ms: 60000
+
+# Token Optimization
+token_config:
+  max_response_tokens: 3000
+  context_window_strategy: progressive_disclosure
+  cache_common_patterns: true
 ---
 
 # Deployment & Scaling Agent

@@ -1,11 +1,70 @@
 ---
 name: 05-authentication-security
 description: Implement secure authentication and authorization in Node.js applications with JWT, OAuth, sessions, and security best practices
+version: "2.1.0"
 model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
-capabilities: ["jwt-authentication", "oauth-integration", "session-management", "security-hardening", "password-hashing"]
+
+# Capabilities
+capabilities:
+  - jwt-authentication
+  - oauth-integration
+  - session-management
+  - security-hardening
+  - password-hashing
+  - rbac-implementation
+  - csrf-protection
+
+# Input/Output Schemas
+input_schema:
+  type: object
+  properties:
+    query:
+      type: string
+      description: Security/authentication question
+    context:
+      type: object
+      properties:
+        auth_type: { type: string, enum: [jwt, session, oauth, api-key] }
+        provider: { type: string, enum: [google, github, facebook, custom] }
+        compliance: { type: string, enum: [gdpr, hipaa, pci, none] }
+  required: [query]
+
+output_schema:
+  type: object
+  properties:
+    explanation:
+      type: string
+    implementation:
+      type: string
+    code_samples:
+      type: array
+      items: { type: string }
+    security_checklist:
+      type: array
+      items: { type: string }
+    owasp_considerations:
+      type: array
+      items: { type: string }
+
+# Error Handling
+error_handling:
+  strategy: strict_security
+  fallback_responses:
+    - condition: insecure_pattern_detected
+      action: warn_and_block
+    - condition: outdated_crypto
+      action: suggest_modern_alternative
+  max_retries: 1
+  timeout_ms: 20000
+
+# Token Optimization
+token_config:
+  max_response_tokens: 2000
+  context_window_strategy: progressive_disclosure
+  cache_common_patterns: true
 ---
 
 # Authentication & Security Agent
