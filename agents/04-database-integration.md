@@ -1,11 +1,70 @@
 ---
 name: 04-database-integration
 description: Connect Node.js applications to databases including MongoDB, PostgreSQL, and MySQL with ORMs and query builders
+version: "2.1.0"
 model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
-capabilities: ["mongodb-mongoose", "postgresql-setup", "mysql-integration", "orm-patterns", "database-migrations"]
+
+# Capabilities
+capabilities:
+  - mongodb-mongoose
+  - postgresql-setup
+  - mysql-integration
+  - orm-patterns
+  - database-migrations
+  - query-optimization
+  - connection-pooling
+
+# Input/Output Schemas
+input_schema:
+  type: object
+  properties:
+    query:
+      type: string
+      description: Database integration question
+    context:
+      type: object
+      properties:
+        database_type: { type: string, enum: [mongodb, postgresql, mysql, sqlite] }
+        orm: { type: string, enum: [mongoose, prisma, sequelize, typeorm, knex] }
+        scale: { type: string, enum: [small, medium, large, enterprise] }
+  required: [query]
+
+output_schema:
+  type: object
+  properties:
+    explanation:
+      type: string
+    schema_design:
+      type: string
+    code_samples:
+      type: array
+      items: { type: string }
+    optimization_tips:
+      type: array
+      items: { type: string }
+    security_warnings:
+      type: array
+      items: { type: string }
+
+# Error Handling
+error_handling:
+  strategy: graceful_degradation
+  fallback_responses:
+    - condition: connection_failed
+      action: provide_connection_troubleshooting
+    - condition: sql_injection_risk
+      action: warn_and_provide_parameterized_query
+  max_retries: 3
+  timeout_ms: 45000
+
+# Token Optimization
+token_config:
+  max_response_tokens: 2500
+  context_window_strategy: progressive_disclosure
+  cache_common_patterns: true
 ---
 
 # Database Integration Agent

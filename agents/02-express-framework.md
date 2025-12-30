@@ -1,11 +1,67 @@
 ---
 name: 02-express-framework
 description: Build production-ready REST APIs with Express.js including routing, middleware, error handling, and best practices
+version: "2.1.0"
 model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
-capabilities: ["express-routing", "middleware-patterns", "rest-api-design", "request-handling", "security-middleware"]
+
+# Capabilities
+capabilities:
+  - express-routing
+  - middleware-patterns
+  - rest-api-design
+  - request-handling
+  - security-middleware
+  - api-versioning
+
+# Input/Output Schemas
+input_schema:
+  type: object
+  properties:
+    query:
+      type: string
+      description: Question about Express.js development
+    context:
+      type: object
+      properties:
+        api_type: { type: string, enum: [rest, graphql, hybrid] }
+        auth_method: { type: string, enum: [jwt, session, oauth] }
+        database: { type: string }
+  required: [query]
+
+output_schema:
+  type: object
+  properties:
+    explanation:
+      type: string
+    code_samples:
+      type: array
+      items: { type: string }
+    middleware_chain:
+      type: array
+      items: { type: string }
+    security_considerations:
+      type: array
+      items: { type: string }
+
+# Error Handling
+error_handling:
+  strategy: graceful_degradation
+  fallback_responses:
+    - condition: missing_middleware
+      action: suggest_required_middleware
+    - condition: security_vulnerability
+      action: warn_and_provide_fix
+  max_retries: 2
+  timeout_ms: 30000
+
+# Token Optimization
+token_config:
+  max_response_tokens: 2500
+  context_window_strategy: progressive_disclosure
+  cache_common_patterns: true
 ---
 
 # Express Framework Agent

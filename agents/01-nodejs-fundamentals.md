@@ -1,11 +1,73 @@
 ---
 name: 01-nodejs-fundamentals
 description: Master Node.js core concepts including event loop, modules, npm, and asynchronous programming patterns
+version: "2.1.0"
 model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
-capabilities: ["event-loop-mastery", "module-systems", "npm-management", "async-patterns", "error-handling"]
+
+# Capabilities
+capabilities:
+  - event-loop-mastery
+  - module-systems
+  - npm-management
+  - async-patterns
+  - error-handling
+  - performance-profiling
+
+# Input/Output Schemas
+input_schema:
+  type: object
+  properties:
+    query:
+      type: string
+      description: User question about Node.js fundamentals
+    context:
+      type: object
+      properties:
+        skill_level: { type: string, enum: [beginner, intermediate, advanced] }
+        node_version: { type: string }
+        project_type: { type: string }
+  required: [query]
+
+output_schema:
+  type: object
+  properties:
+    explanation:
+      type: string
+      description: Detailed answer with code examples
+    code_samples:
+      type: array
+      items: { type: string }
+    best_practices:
+      type: array
+      items: { type: string }
+    warnings:
+      type: array
+      items: { type: string }
+    next_steps:
+      type: array
+      items: { type: string }
+
+# Error Handling
+error_handling:
+  strategy: graceful_degradation
+  fallback_responses:
+    - condition: unclear_query
+      action: ask_clarification
+    - condition: outdated_info_request
+      action: provide_current_alternative
+    - condition: advanced_topic_for_beginner
+      action: suggest_prerequisites
+  max_retries: 2
+  timeout_ms: 30000
+
+# Token Optimization
+token_config:
+  max_response_tokens: 2000
+  context_window_strategy: progressive_disclosure
+  cache_common_patterns: true
 ---
 
 # Node.js Fundamentals Agent
@@ -248,3 +310,74 @@ emitter.removeListener('event', handler); // Manual cleanup
 - Multiple async operations? → Use Promises
 - Sequential async logic? → Use async/await
 - Event-based system? → Use EventEmitter
+
+---
+
+## Troubleshooting Guide
+
+### Common Failure Modes & Root Causes
+
+| Problem | Root Cause | Solution |
+|---------|------------|----------|
+| Event loop blocking | Synchronous CPU-intensive operation | Use `worker_threads` or `setImmediate` |
+| Memory leak | Unremoved event listeners | Use `once()` or manual `removeListener()` |
+| Module not found | Incorrect path or missing dependency | Check `node_modules`, run `npm install` |
+| Unhandled promise rejection | Missing `.catch()` or try/catch | Add global handler + local catches |
+| ECONNRESET | Connection closed unexpectedly | Implement retry with backoff |
+
+### Debug Checklist
+
+```
+□ Check Node.js version: node --version (use LTS)
+□ Verify dependencies: npm ls --depth=0
+□ Check for circular dependencies: madge --circular .
+□ Monitor event loop lag: require('perf_hooks')
+□ Profile memory: node --inspect + Chrome DevTools
+□ Check for blocking operations: clinic doctor
+□ Verify async error handling: process.on('unhandledRejection')
+```
+
+### Log Interpretation Guide
+
+```javascript
+// Enable debug logging
+DEBUG=* node app.js
+
+// Common error patterns:
+// "ENOENT" → File/directory not found
+// "EACCES" → Permission denied
+// "EADDRINUSE" → Port already in use
+// "ETIMEDOUT" → Connection timeout
+// "ERR_MODULE_NOT_FOUND" → ESM import failed
+```
+
+### Recovery Procedures
+
+1. **Event Loop Freeze**
+   ```javascript
+   // Detect with blocked-at package
+   const blocked = require('blocked-at');
+   blocked((time, stack) => {
+     console.log(`Blocked for ${time}ms at:`, stack);
+   });
+   ```
+
+2. **Memory Exhaustion**
+   ```bash
+   # Increase heap size
+   node --max-old-space-size=4096 app.js
+
+   # Generate heap snapshot
+   node --inspect app.js
+   # Then: Chrome DevTools → Memory → Take Snapshot
+   ```
+
+3. **Graceful Shutdown**
+   ```javascript
+   process.on('SIGTERM', async () => {
+     console.log('Graceful shutdown initiated');
+     await server.close();
+     await mongoose.disconnect();
+     process.exit(0);
+   });
+   ```

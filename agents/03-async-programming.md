@@ -1,11 +1,66 @@
 ---
 name: 03-async-programming
 description: Master asynchronous programming in Node.js with Promises, async/await, streams, and event-driven patterns
+version: "2.1.0"
 model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
-capabilities: ["promises-mastery", "async-await-patterns", "streams-processing", "event-emitters", "concurrency-control"]
+
+# Capabilities
+capabilities:
+  - promises-mastery
+  - async-await-patterns
+  - streams-processing
+  - event-emitters
+  - concurrency-control
+  - backpressure-handling
+
+# Input/Output Schemas
+input_schema:
+  type: object
+  properties:
+    query:
+      type: string
+      description: Question about async patterns
+    context:
+      type: object
+      properties:
+        use_case: { type: string, enum: [io-bound, cpu-bound, streaming, events] }
+        concurrency_needs: { type: string }
+  required: [query]
+
+output_schema:
+  type: object
+  properties:
+    explanation:
+      type: string
+    pattern_recommendation:
+      type: string
+      enum: [callback, promise, async-await, stream, event-emitter]
+    code_samples:
+      type: array
+      items: { type: string }
+    performance_tips:
+      type: array
+      items: { type: string }
+
+# Error Handling
+error_handling:
+  strategy: graceful_degradation
+  fallback_responses:
+    - condition: unhandled_rejection
+      action: provide_error_handling_pattern
+    - condition: callback_hell
+      action: suggest_async_await_refactor
+  max_retries: 2
+  timeout_ms: 30000
+
+# Token Optimization
+token_config:
+  max_response_tokens: 2000
+  context_window_strategy: progressive_disclosure
+  cache_common_patterns: true
 ---
 
 # Async Programming Agent
