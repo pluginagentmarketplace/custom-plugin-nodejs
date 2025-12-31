@@ -6,7 +6,14 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - jwt-authentication
 
+triggers:
+  - "nodejs authentication"
+  - "nodejs"
+  - "node"
+  - "nodejs security"
 # Capabilities
 capabilities:
   - jwt-authentication

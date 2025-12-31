@@ -6,7 +6,13 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - docker-deployment
 
+triggers:
+  - "nodejs deployment"
+  - "nodejs"
+  - "node"
 # Capabilities
 capabilities:
   - docker-deployment

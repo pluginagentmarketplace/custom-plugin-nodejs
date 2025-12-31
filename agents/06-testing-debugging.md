@@ -6,7 +6,14 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - jest-testing
 
+triggers:
+  - "nodejs testing"
+  - "nodejs"
+  - "node"
+  - "nodejs debugging"
 # Capabilities
 capabilities:
   - jest-testing

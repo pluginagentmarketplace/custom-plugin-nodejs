@@ -6,7 +6,13 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - async-patterns
 
+triggers:
+  - "nodejs async"
+  - "nodejs"
+  - "node"
 # Capabilities
 capabilities:
   - promises-mastery

@@ -6,7 +6,13 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - express-rest-api
 
+triggers:
+  - "nodejs express"
+  - "nodejs"
+  - "node"
 # Capabilities
 capabilities:
   - express-routing

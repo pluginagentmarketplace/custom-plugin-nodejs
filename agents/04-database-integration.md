@@ -6,7 +6,13 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills: []
 
+triggers:
+  - "nodejs database"
+  - "nodejs"
+  - "node"
+  - "nodejs integration"
 # Capabilities
 capabilities:
   - mongodb-mongoose
